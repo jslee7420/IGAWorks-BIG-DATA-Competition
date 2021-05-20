@@ -47,13 +47,13 @@ numerical variable인 event_datetime, predicted_house_price 에 대해 이상치
 ## 5.학습
 ### 5.1.모델선정
 보통 가장 좋은 성능을 내는 앙상블 모델 5개 와 선형 분류 모델까지 총 6종의 모델을 선정하여 학습을 진행하였습니다.
-- Gradient
-- Boosting
+- Gradient Boosting
 - AdaBoost
 - XgBoost
 - LightGBM
 - Random Forest
 - Logistic Regression
+
 feature importance를 구하여 결과에 영향을 많이 미치는 feature들만 추려내서 feature selection을 진행하고자 했습니다.
 
 ## 6.결과
