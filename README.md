@@ -10,13 +10,13 @@ IGAWorks에서 주관하는 빅데이터 공모전으로 광고 클릭률 예측
 ## 2. 탐색적 자료분석
 데이터 타입체크, unique값 확인, null 값 체크, 종속변수 분포 체크를 수행하여 다음과 같은 결론을 얻었습니다.
 
-1.대부분의 변수가 범주형 데이터이다.(age feature포함) ->encoding 필요
-2.install_pack, cate_code는 데이터를 가공해서 새로운 정보를 만들어내야한다.(가공 방안을 생각해내지 못해 해
+1. 대부분의 변수가 범주형 데이터이다.(age feature포함) ->encoding 필요
+2. install_pack, cate_code는 데이터를 가공해서 새로운 정보를 만들어내야한다.(가공 방안을 생각해내지 못해 해
 당열 제외 결정)
-3.predicted_house_price에 존재하는 null 값을 채워주어야한다.
-4.event_datetime은 unique값이 너무 크기 때문에 hour 정보만 추출하여야 한다.
-5.unique값이 1인 device_os, device_country는 click에 영향을 미치지 않는다. 제외가능.
-6.bid_id의 경우 unique값이 너무 크기 때문에 영향을 미치치 않을 것으로 보인다.
+3. predicted_house_price에 존재하는 null 값을 채워주어야한다.
+4. event_datetime은 unique값이 너무 크기 때문에 hour 정보만 추출하여야 한다.
+5. unique값이 1인 device_os, device_country는 click에 영향을 미치지 않는다. 제외가능.
+6. bid_id의 경우 unique값이 너무 크기 때문에 영향을 미치치 않을 것으로 보인다.
 
 ## 3. 데이터 전처리
 ### 3.1.predicted house price의 nan값 채우기
